@@ -1,0 +1,30 @@
+nav ul li:first-child a{
+    display: grid;
+    justify-self: center; 
+    color: var(--color-texto-base);
+    background-color: var(--color-back-base);
+    border-color: var(--color-back-base);
+    border-width:  0px 9vw 0px 9vw;
+    border-radius: 10px;
+    border-style: solid;
+}
+nav ul li a:hover {
+    display: grid;
+    justify-self: center; 
+    color: var(--color-back-base);
+    background-color: var(--color-texto-base);
+    border-color: var(--color-texto-base);
+    border-width:  0px 9vw 0px 9vw;
+    border-radius: 10px;
+    border-style: solid;
+}
+nav ul li:nth-child(2) a{
+    display: grid;
+    justify-self: center; 
+    color: var(--color-back-base);
+    background-color: var(--color-texto-base);
+    border-color: var(--color-texto-base);
+    border-width:  0px 9vw 0px 9vw;
+    border-radius: 10px;
+    border-style: solid;
+}

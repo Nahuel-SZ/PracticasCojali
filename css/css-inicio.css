@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap');
 
-
-
 :root {
     --font-chivo-main: "Chivo", sans-serif;
     --weight-chivo-heavy: 800;
     --weight-chivo-medium: 500;
     --font-geist-main: "Geist", sans-serif;
-
+    --color-enlaces-contacto: #E2725B;
+    --color-back-base: black;
+    --color-texto-base: antiquewhite;
 }
 
 * {
@@ -16,8 +16,7 @@
     margin: 0px;
     padding: 0px;
     font-family: var(--font-geist-main);
-    color: antiquewhite;
-    background-color: black;
+
 }
 
 header img {
@@ -38,6 +37,8 @@ body {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto auto 1fr auto;
     min-height: 100vh;
+    color: var(--color-texto-base);
+    background-color: var(--color-back-base);
 }
 
 header {
@@ -63,14 +64,62 @@ nav {
 nav ul {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+    border-radius: 10px;
+    border-color: var(--color-texto-base);
+    border-style: solid;
+    border-width: 1px;
 }
-nav li {
+nav ul li {
     display: grid;
     justify-self: center; 
+}
+nav ul li a{
+    text-decoration: none;
+    color: var(--color-texto-base);
+}
+nav ul li:first-child a{
+    display: grid;
+    justify-self: center; 
+    color: var(--color-back-base);
+    background-color: var(--color-texto-base);
+    border-color: var(--color-texto-base);
+    border-width:  0px 9vw 0px 9vw;
+    border-radius: 10px;
+    border-style: solid;
+}
+
+nav ul li a:hover {
+    display: grid;
+    justify-self: center; 
+    color: var(--color-back-base);
+    background-color: var(--color-texto-base);
+    border-color: var(--color-texto-base);
+    border-width:  0px 9vw 0px 9vw;
+    border-radius: 10px;
+    border-style: solid;
+}
+hr {
+    color: var(--color-texto-base);
 }
 footer {
     display: grid;
     grid-column: 1/5;
     justify-self: center;
     margin: 10px 10px 10px 10px;
+    width: 100%;
+}
+footer h3{
+    margin: 0px 0px 0px 10vw;
+}
+footer ul li{
+    list-style:symbols("-");
+    margin: 0px 0px 0px 20vw;
+}
+footer ul li a{
+    text-decoration: none;
+    color:var(--color-texto-base);
+    }
+footer ul li a:hover{
+    text-decoration: none;
+    color: var(--color-enlaces-contacto);
 }

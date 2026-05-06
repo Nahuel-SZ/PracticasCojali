@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap');
+
+
+
+:root {
+    --font-chivo-main: "Chivo", sans-serif;
+    --weight-chivo-heavy: 800;
+    --weight-chivo-medium: 500;
+    --font-geist-main: "Geist", sans-serif;
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: var(--font-geist-main);
+    color: antiquewhite;
+    background-color: black;
+}
+
+header img {
+    height: 150px;
+    border-radius: 5%;
+}
+
+h1 {
+    font-family: var(--font-chivo-main);
+    font-weight: var(--weight-chivo-heavy);
+}
+h2,h3,h4 {
+    font-family: var(--font-chivo-main);
+    font-weight: var(--weight-chivo-medium);
+}
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto 1fr auto;
+    min-height: 100vh;
+}
+
+header {
+    display: grid;
+    grid-column: 1/5;
+    grid-row: 1;
+
+    grid-template-columns: max-content max-content 1fr;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 20px;
+    
+}
+header h2 {
+    justify-self: end; 
+}
+
+nav {
+    display: grid;
+    grid-column: 1/5;
+    grid-row: 2;
+}
+nav ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+}
+nav li {
+    display: grid;
+    justify-self: center; 
+}
+footer {
+    display: grid;
+    grid-column: 1/5;
+    justify-self: center;
+    margin: 10px 10px 10px 10px;
+}

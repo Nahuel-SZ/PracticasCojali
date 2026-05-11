@@ -5,7 +5,7 @@ nav ul li:first-child a{
     background-color: var(--color-back-base);
     border-color: var(--color-back-base);
     border-width:  0px 9vw 0px 9vw;
-    border-radius: 10px;
+    border-radius: 0.5rem;
     border-style: solid;
 }
 nav ul li a:hover {
@@ -15,7 +15,7 @@ nav ul li a:hover {
     background-color: var(--color-texto-base);
     border-color: var(--color-texto-base);
     border-width:  0px 9vw 0px 9vw;
-    border-radius: 10px;
+    border-radius: 0.5rem;
     border-style: solid;
 }
 nav ul li:nth-child(2) a{
@@ -25,6 +25,6 @@ nav ul li:nth-child(2) a{
     background-color: var(--color-texto-base);
     border-color: var(--color-texto-base);
     border-width:  0px 9vw 0px 9vw;
-    border-radius: 10px;
+    border-radius: 0.5rem;
     border-style: solid;
 }

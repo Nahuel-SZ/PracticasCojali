@@ -4,8 +4,8 @@ nav ul li:first-child a{
     color: var(--color-texto-base);
     background-color: var(--color-back-base);
     border-color: var(--color-back-base);
-    border-width:  0px 9vw 0px 9vw;
-    border-radius: 10px;
+    border-width:  0px 7rem 0px 7rem;
+    border-radius: 0.5rem;
     border-style: solid;
 }
 nav ul li a:hover {
@@ -14,8 +14,8 @@ nav ul li a:hover {
     color: var(--color-back-base);
     background-color: var(--color-texto-base);
     border-color: var(--color-texto-base);
-    border-width:  0px 9vw 0px 9vw;
-    border-radius: 10px;
+    border-width:  0px 7rem 0px 7rem;
+    border-radius: 0.5rem;
     border-style: solid;
 }
 nav ul li:nth-child(4) a{
@@ -24,8 +24,36 @@ nav ul li:nth-child(4) a{
     color: var(--color-back-base);
     background-color: var(--color-texto-base);
     border-color: var(--color-texto-base);
-    border-width:  0px 9vw 0px 9vw;
-    border-radius: 10px;
+    border-width:  0px 7rem 0px 7rem;
+    border-radius: 0.5rem;
     border-style: solid;
 }
 
+article.tarjeta {
+  display: flex;
+  flex-direction: column; 
+  gap: 1rem;
+  padding: 2rem;
+}
+
+article.tarjeta ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 1rem;      
+}
+
+article.tarjeta li {
+  background-color: var(--color-back-base);
+  border: 0.1rem solid var(--color-texto-base);
+  border-radius: 1rem;       
+  padding: 0.5rem 1rem;         
+  display: inline-block;     
+}
+
+article.tarjeta li:hover {
+  background-color: var(--color-texto-base);
+  color: var(--color-back-base);
+}

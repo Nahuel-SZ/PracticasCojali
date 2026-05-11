@@ -8,7 +8,7 @@
     --font-geist-main: "Geist", sans-serif;
     --color-enlaces-contacto: #e2725b;
     --color-back-base: black;
-    --color-texto-base: #C2B280;
+    --color-texto-base: #c2b280;
 }
 
 * {
@@ -23,7 +23,9 @@ h1 {
     font-weight: var(--weight-chivo-heavy);
 }
 
-h2,h3,h4 {
+h2,
+h3,
+h4 {
     font-family: var(--font-chivo-main);
     font-weight: var(--weight-chivo-medium);
 }
@@ -82,7 +84,7 @@ nav ul {
     border-radius: 10px;
     border-color: var(--color-texto-base);
     border-style: solid;
-    border-width: 1px;
+    border-width: 0.1rem;
 }
 
 nav ul li {
@@ -102,7 +104,7 @@ nav ul li:first-child a {
     background-color: var(--color-texto-base);
     border-color: var(--color-texto-base);
     border-width: 0px 9vw 0px 9vw;
-    border-radius: 10px;
+    border-radius: 0.5rem;
     border-style: solid;
 }
 
@@ -113,7 +115,7 @@ nav ul li a:hover {
     background-color: var(--color-texto-base);
     border-color: var(--color-texto-base);
     border-width: 0px 9vw 0px 9vw;
-    border-radius: 10px;
+    border-radius: 0.5rem;
     border-style: solid;
 }
 
@@ -134,9 +136,11 @@ main {
 .tarjeta ul {
     padding-left: 2em;
 }
-.tarjeta p{
+
+.tarjeta p {
     margin-top: 1em;
 }
+
 hr {
     color: var(--color-texto-base);
 }

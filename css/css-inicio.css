@@ -1,14 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap");
 
 :root {
     --font-chivo-main: "Chivo", sans-serif;
     --weight-chivo-heavy: 800;
     --weight-chivo-medium: 500;
     --font-geist-main: "Geist", sans-serif;
-    --color-enlaces-contacto: #E2725B;
+    --color-enlaces-contacto: #e2725b;
     --color-back-base: black;
-    --color-texto-base: antiquewhite;
+    --color-texto-base: #C2B280;
 }
 
 * {
@@ -16,22 +16,23 @@
     margin: 0px;
     padding: 0px;
     font-family: var(--font-geist-main);
-
-}
-
-header img {
-    height: 150px;
-    border-radius: 5%;
 }
 
 h1 {
     font-family: var(--font-chivo-main);
     font-weight: var(--weight-chivo-heavy);
 }
+
 h2,h3,h4 {
     font-family: var(--font-chivo-main);
     font-weight: var(--weight-chivo-medium);
 }
+
+p {
+    font-family: var(--font-geist-main);
+    font-weight: 300;
+}
+
 body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -50,57 +51,96 @@ header {
     align-items: center;
     gap: 20px;
     padding: 10px 20px;
-    
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
+    background-color: var(--color-back-base);
 }
+
+header img {
+    height: 150px;
+    border-radius: 5%;
+}
+
 header h2 {
-    justify-self: end; 
+    justify-self: end;
 }
 
 nav {
     display: grid;
     grid-column: 1/5;
     grid-row: 2;
+    position: sticky;
+    top: 170px;
+    z-index: 1000;
+    background-color: var(--color-back-base);
 }
+
 nav ul {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     border-radius: 10px;
     border-color: var(--color-texto-base);
     border-style: solid;
     border-width: 1px;
 }
+
 nav ul li {
     display: grid;
-    justify-self: center; 
+    justify-self: center;
 }
-nav ul li a{
+
+nav ul li a {
     text-decoration: none;
     color: var(--color-texto-base);
 }
-nav ul li:first-child a{
+
+nav ul li:first-child a {
     display: grid;
-    justify-self: center; 
+    justify-self: center;
     color: var(--color-back-base);
     background-color: var(--color-texto-base);
     border-color: var(--color-texto-base);
-    border-width:  0px 9vw 0px 9vw;
+    border-width: 0px 9vw 0px 9vw;
     border-radius: 10px;
     border-style: solid;
 }
 
 nav ul li a:hover {
     display: grid;
-    justify-self: center; 
+    justify-self: center;
     color: var(--color-back-base);
     background-color: var(--color-texto-base);
     border-color: var(--color-texto-base);
-    border-width:  0px 9vw 0px 9vw;
+    border-width: 0px 9vw 0px 9vw;
     border-radius: 10px;
     border-style: solid;
+}
+
+main {
+    display: grid;
+    grid-column: 2/4;
+}
+
+.tarjeta {
+    padding: 2em 2em 2em 2em;
+    margin: 1em 1em 1em 1em;
+    border-style: solid;
+    border-color: var(--color-texto-base);
+    border-radius: 2em;
+    color: var(--color-texto-base);
+}
+
+.tarjeta ul {
+    padding-left: 2em;
+}
+.tarjeta p{
+    margin-top: 1em;
 }
 hr {
     color: var(--color-texto-base);
 }
+
 footer {
     display: grid;
     grid-column: 1/5;
@@ -108,18 +148,22 @@ footer {
     margin: 10px 10px 10px 10px;
     width: 100%;
 }
-footer h3{
+
+footer h3 {
     margin: 0px 0px 0px 10vw;
 }
-footer ul li{
-    list-style:symbols("-");
+
+footer ul li {
+    list-style: symbols("-");
     margin: 0px 0px 0px 20vw;
 }
-footer ul li a{
+
+footer ul li a {
     text-decoration: none;
-    color:var(--color-texto-base);
-    }
-footer ul li a:hover{
+    color: var(--color-texto-base);
+}
+
+footer ul li a:hover {
     text-decoration: none;
     color: var(--color-enlaces-contacto);
 }

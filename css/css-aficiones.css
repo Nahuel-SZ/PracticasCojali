@@ -1,3 +1,7 @@
+main {
+    display: grid;
+    grid-column: 1/5;
+}
 nav ul li:first-child a{
     display: grid;
     justify-self: center; 
@@ -27,4 +31,21 @@ nav ul li:last-child a{
     border-width:  0px 9vw 0px 9vw;
     border-radius: 0.5rem;
     border-style: solid;
+}
+section.tarjeta {
+    padding: 2em 2em 2em 2em;
+    margin: 1em 1em 1em 1em;
+    border-style: none;
+    border-color: var(--color-texto-base);
+    border-radius: 2em;
+    color: var(--color-texto-base);
+}
+
+.img {
+    display: flex;
+    justify-content:space-around
+}
+article img {
+    padding: 1rem;
+    width: 25%;
 }

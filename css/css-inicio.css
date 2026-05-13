@@ -7,10 +7,16 @@
     --weight-chivo-medium: 500;
     --font-geist-main: "Geist", sans-serif;
     --color-enlaces-contacto: #e2725b;
-    --color-back-base: black;
-    --color-texto-base: #c2b280;
+    --color-back-base: #2c2c2c;
+    --color-texto-base: #cfc090;
+
 }
 
+/*
+    --color-back-base: #cfc090; 
+    --color-texto-base: #2c2c2c; 
+    --color-enlaces-contacto: #e2725b;
+*/
 * {
     box-sizing: border-box;
     margin: 0px;
@@ -103,7 +109,7 @@ nav ul li:first-child a {
     color: var(--color-back-base);
     background-color: var(--color-texto-base);
     border-color: var(--color-texto-base);
-    border-width: 0px 9vw 0px 9vw;
+    border-width: 0px 7rem 0px 7rem;
     border-radius: 0.5rem;
     border-style: solid;
 }
@@ -114,7 +120,7 @@ nav ul li a:hover {
     color: var(--color-back-base);
     background-color: var(--color-texto-base);
     border-color: var(--color-texto-base);
-    border-width: 0px 9vw 0px 9vw;
+    border-width: 0px 7rem 0px 7rem;
     border-radius: 0.5rem;
     border-style: solid;
 }
@@ -170,4 +176,18 @@ footer ul li a {
 footer ul li a:hover {
     text-decoration: none;
     color: var(--color-enlaces-contacto);
+}
+
+footer ul:last-child {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+
+}
+
+footer ul:last-child li {
+    list-style: none;
+}
+footer ul:last-child img{
+    width: 3rem;
 }

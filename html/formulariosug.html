@@ -5,13 +5,13 @@
   <meta charset="UTF-8" />
   <title>Portfolio Nahuel Salum Zapero</title>
   <link rel="stylesheet" href="../css/css-inicio.css" />
-  <link rel="stylesheet" href="../css/css-habilidades.css" />
+  <link rel="stylesheet" href="../css/css-formulariosug.css" />
 </head>
 
 <body>
   <header>
     <img src="../src/perfil.jpg" />
-    <h1>Portfolio: Habilidades</h1>
+    <h1>Portfolio: Formulario De Sugerencias</h1>
     <h2>
       Nahuel Salum Zapero <br />
       Estudiante de 1º de DAM
@@ -27,30 +27,28 @@
     </ul>
   </nav>
   <main>
-    <section class="tarjeta">
-      <h1>HABILIDADES: </h1>
+    <section>
       <article class="tarjeta">
-
-        <ul>
-          <li>Desarrollo en Blue Prism</li>
-          <li>CSS</li>
-          <li>HTML</li>
-          <li>Uso del Terminal en Windows y Linux</li>
-          <li>Instalación de Sistemas Operativos</li>
-          <li>Iniciado en JavaScript</li>
-          <li>Iniciado en Markdown</li>
-          <li>Nociones de Ciberseguridad</li>
-          <li>Uso de Git / GitHub</li>
-          <li>Montaje de Equipos</li>
-          <li>Configuración Redes Locales</li>
-          <li>Mantenimiento Redes Locales</li>
-          <li>Bases de Datos SQL</li>
-          <li>Metodologías Agiles</li>
-          <li>Comunicación Oral y Excrita</li>
-          <li>Proactividad</li>
-          <li>Trabajo en Equipo</li>
-          <li>Adaptabilidad</li>
-        </ul>
+        <h1>Formulario de Sugerencias o Contacto</h1>
+        <form>
+          <ul>
+            <li>
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+            </li>
+            <li>
+              <label for="email">Correo electrónico:</label>
+              <input type="email" id="email" name="email" placeholder="Tu email"/>
+            </li>
+            <li>
+              <label for="msg">Mensaje:</label>
+              <textarea id="msg" name="user_message" placeholder="Escriba aquí su sugerencia o consulta" rows="10"></textarea>
+            </li>
+            <li>
+              <button type="submit" class="boton-enviar">Enviar Recomendación</button>
+            </li>
+          </ul>
+        </form>
 
       </article>
     </section>

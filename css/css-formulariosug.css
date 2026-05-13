@@ -1,3 +1,29 @@
+form ul {
+    list-style: none;
+    padding: 1rem;
+}
+
+form ul li {
+    padding-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+form ul li label {
+    flex: 1;
+    text-align: left;
+}
+
+form ul li input, 
+form ul li textarea {
+    flex: 2; 
+}
+
+form ul li:last-child {
+    justify-content: end;
+    padding-top: 2rem;
+}
 nav ul li:first-child a{
     display: grid;
     justify-self: center; 
@@ -9,16 +35,6 @@ nav ul li:first-child a{
     border-style: solid;
 }
 nav ul li a:hover {
-    display: grid;
-    justify-self: center; 
-    color: var(--color-back-base);
-    background-color: var(--color-texto-base);
-    border-color: var(--color-texto-base);
-    border-width:  0px 7rem 0px 7rem;
-    border-radius: 0.5rem;
-    border-style: solid;
-}
-nav ul li:nth-child(2) a{
     display: grid;
     justify-self: center; 
     color: var(--color-back-base);

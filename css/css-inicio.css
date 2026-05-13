@@ -75,27 +75,31 @@ header h2 {
 }
 
 nav {
-    display: grid;
+    display: flex;
     grid-column: 1/5;
     grid-row: 2;
     position: sticky;
     top: 170px;
     z-index: 1000;
     background-color: var(--color-back-base);
+    justify-content: center;
 }
 
 nav ul {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     border-radius: 10px;
     border-color: var(--color-texto-base);
     border-style: solid;
     border-width: 0.1rem;
+    width: 100%;
 }
 
 nav ul li {
-    display: grid;
-    justify-self: center;
+    display: flex;
+    justify-content: center;
+    flex: 1;
 }
 
 nav ul li a {
@@ -163,31 +167,40 @@ footer h3 {
     margin: 0px 0px 0px 10vw;
 }
 
-footer ul li {
+footer ul:first-of-type li {
     list-style: symbols("-");
     margin: 0px 0px 0px 20vw;
 }
 
-footer ul li a {
+footer ul:first-of-type li a {
     text-decoration: none;
     color: var(--color-texto-base);
 }
 
-footer ul li a:hover {
+footer ul:first-of-type li a:hover {
     text-decoration: none;
     color: var(--color-enlaces-contacto);
 }
 
 footer ul:last-child {
     display: flex;
-    justify-content: space-around;
+    justify-content: end;
+    align-items: center;
     list-style: none;
-
+    gap: 2rem;
+    margin-top: 1rem;
+    margin-right: 1rem;
 }
 
 footer ul:last-child li {
+    display: flex;
+    align-items: center;
     list-style: none;
 }
-footer ul:last-child img{
-    width: 3rem;
+footer ul:last-child img {
+    width: 2rem;
+}
+footer p {
+    font-size: 0.8rem;
+    opacity: 0.8;
 }

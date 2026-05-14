@@ -9,41 +9,25 @@ if (temaGuardado === "claro") {
     actualizarInterfaz(true);
 }
 
-btn.addEventListener("click", () => {
-    body.classList.toggle("modo-claro");
-
-    const esModoClaro = body.classList.contains("modo-claro");
-
-    localStorage.setItem("tema-preferido", esModoClaro ? "claro" : "oscuro");
-
-    btn.textContent = esModoClaro ? "Modo Oscuro" : "Modo Claro";
-
-    logosRedes.forEach(img => {
-        let rutaActual = img.getAttribute("src");
-
-        if (esModoClaro) {
-            img.setAttribute("src", rutaActual.replace("-c.png", "-n.png"));
-        } else {
-            img.setAttribute("src", rutaActual.replace("-n.png", "-c.png"));
-        }
-    });
-});
-
-/*Persistencia*/
 function actualizarInterfaz(esClaro) {
     btn.textContent = esClaro ? "Modo Oscuro" : "Modo Claro";
 
     logosRedes.forEach(img => {
         let rutaActual = img.getAttribute("src");
         if (esClaro) {
-            // Cambia los logos a la versión negra (_n)
             img.setAttribute("src", rutaActual.replace("-c.png", "-n.png"));
         } else {
-            // Cambia los logos a la versión color/clara (_c)
             img.setAttribute("src", rutaActual.replace("-n.png", "-c.png"));
         }
     });
 }
+
+btn.addEventListener("click", () => {
+    body.classList.toggle("modo-claro");
+    const esModoClaro = body.classList.contains("modo-claro");
+    localStorage.setItem("tema-preferido", esModoClaro ? "claro" : "oscuro");
+    actualizarInterfaz(esModoClaro);
+});
 /*Carga Estudios*/
 
 const misEstudios = [{

@@ -28,3 +28,24 @@ nav ul li:nth-child(2) a{
     border-radius: 0.5rem;
     border-style: solid;
 }
+main {
+    grid-column: 1 / 5; 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+}
+
+section:first-of-type {
+    grid-column: 1 / 5; 
+    width: 99%; 
+    margin: 5px 0px 0px 0px;
+    justify-self: center;
+    
+    padding: 2rem 10vw; 
+    background-color: var(--color-back-base);
+    border-bottom: 0.1rem solid var(--color-texto-base);
+}
+
+#contenedor-estudios {
+    grid-column: 2 / 4;
+    display: grid;
+}

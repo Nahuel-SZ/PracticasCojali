@@ -9,14 +9,8 @@
     --color-enlaces-contacto: #e2725b;
     --color-back-base: #2c2c2c;
     --color-texto-base: #cfc090;
-
 }
 
-/*
-    --color-back-base: #cfc090; 
-    --color-texto-base: #2c2c2c; 
-    --color-enlaces-contacto: #e2725b;
-*/
 * {
     box-sizing: border-box;
     margin: 0px;
@@ -50,12 +44,17 @@ body {
     background-color: var(--color-back-base);
 }
 
+body.modo-claro {
+    --color-back-base: #cfc090;
+    --color-texto-base: #2c2c2c;
+}
+
 header {
     display: grid;
     grid-column: 1/5;
     grid-row: 1;
 
-    grid-template-columns: max-content max-content 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     align-items: center;
     gap: 20px;
     padding: 10px 20px;
@@ -65,12 +64,40 @@ header {
     background-color: var(--color-back-base);
 }
 
+#modo-color {
+    display: grid;
+    grid-column: 3/4;
+    padding: 0.5rem 2rem;
+    cursor: pointer;
+    border-radius: 2rem;
+    border: 0.1rem solid var(--color-texto-base);
+    background-color: var(--color-back-base);
+    color: var(--color-texto-base);
+    justify-self: center;
+}
+
+#modo-color:hover {
+    display: grid;
+    grid-column: 3/4;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    cursor: pointer;
+    border-radius: 2rem;
+    background-color: var(--color-texto-base);
+    color: var(--color-back-base);
+    justify-self: center;
+}
+
 header img {
+    display: grid;
     height: 150px;
     border-radius: 5%;
 }
 
 header h2 {
+    display: grid;
     justify-self: end;
 }
 
@@ -197,9 +224,11 @@ footer ul:last-child li {
     align-items: center;
     list-style: none;
 }
+
 footer ul:last-child img {
     width: 2rem;
 }
+
 footer p {
     font-size: 0.8rem;
     opacity: 0.8;
